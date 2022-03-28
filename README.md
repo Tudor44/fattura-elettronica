@@ -11,7 +11,7 @@ documentale.
 
 ------
 
-####Aggiornata all'ultima versione della specifica proveniente dall'Agenzia Delle Entrate (1.7).
+#### Aggiornata all'ultima versione della specifica proveniente dall'Agenzia Delle Entrate (1.7).
 Link della specifica completa in formato pdf: [Specifica](https://www.agenziaentrate.gov.it/portale/documents/20143/4056792/Allegato+A+-+Specifiche+tecniche+vers+1.7_30122021.pdf/80bc484b-57d8-1803-f1ab-948bf95912b9)
 
 Funzionalità di base versione 0.1:
@@ -32,7 +32,7 @@ mvn install
 
 Testata con Maven 3 e Java 8 (al momento).
 
-La è stata ideata utilizzando le API di JAXB 2.3.1: 
+Il progetto è stato ideato utilizzando le API di JAXB 2.3.1: 
 
 Per maggiori dettagli [Link](https://en.wikipedia.org/wiki/Jakarta_XML_Binding) 
 
@@ -47,21 +47,21 @@ L'azione genera un file xml nominato IT99999999999_00001.xml, sotto la cartella 
 
 ## English presentation and instruction
 
-I m pleasure to share with all of you Open Source version of Italian Electronic Invoice Java Library, according to the Italian rules and specifications.
+I'm pleased to share with all of you Open Source version of Italian Electronic Invoice Java Library, according to the Italian rules and specifications.
 
 --------
 I think that the process of digitization of document management is important for all size of organizations and any grade.
 My primer experience with the sphere of document management sphere begin with Italian E-Invoice.
 
 
-####Updated with latest version of ADE (Agenzia delle Entrate) specifications (1.7).
+#### Updated with latest version of ADE (Agenzia delle Entrate) specifications (1.7).
 
 Link to the completed document in pdf: [Specifica](https://www.agenziaentrate.gov.it/portale/documents/20143/4056792/Allegato+A+-+Specifiche+tecniche+vers+1.7_30122021.pdf/80bc484b-57d8-1803-f1ab-948bf95912b9)
 
 
 
 ### Installation
-All'interno della cartella del progetto, lanciare da riga di comando:
+In the project folder run following commands:
 ```
 mvn clean
 ```
