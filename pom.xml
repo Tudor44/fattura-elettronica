@@ -42,7 +42,7 @@
                             <xsdOptions>
                                 <xsdOption>
                                     <xsd>src/main/resources/fatturapa-1.2.xsd</xsd> <!--shares a common.xsd file causing the conflicts-->
-                                    <packagename>it.noirepa.fatturapa.jaxb</packagename>
+                                    <packagename>it.noriepa.fatturapa.jaxb</packagename>
                                 </xsdOption>
                             </xsdOptions>
                         </configuration>

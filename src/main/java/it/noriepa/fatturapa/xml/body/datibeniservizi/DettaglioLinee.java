@@ -31,15 +31,14 @@ public class DettaglioLinee {
 
     public DettaglioLinee(){}
 
-    public DettaglioLinee(Integer numeroLinea, String descrizione, BigDecimal prezzoUnitario, BigDecimal prezzoTotale,  BigDecimal aliquotaIVA) {
+    public DettaglioLinee(Integer numeroLinea, String descrizione, BigDecimal prezzoUnitario, BigDecimal aliquotaIVA) {
         this.numeroLinea = numeroLinea;
         this.descrizione = descrizione;
         this.prezzoUnitario = prezzoUnitario;
-        this.prezzoTotale = prezzoTotale;
         this.aliquotaIVA = aliquotaIVA;
     }
 
-    public DettaglioLinee(Integer numeroLinea, Optional<String> tipoCessionePrestazione, Optional<List<CodiceArticolo>> codiceArticolo, String descrizione, Optional<BigDecimal> quantita, Optional<String> unitaMisura, Optional<XMLGregorianCalendar> dataInizioPeriodo, Optional<XMLGregorianCalendar> dataFinePeriodo, BigDecimal prezzoUnitario, Optional<List<ScontoMaggiorazione>> scontoMaggiorazione, BigDecimal prezzoTotale, BigDecimal aliquotaIVA, Optional<String> ritenuta, Optional<String> natura, Optional<String> riferimentoAmministrazione, Optional<List<AltriDatiGestionali>> altriDatiGestionali) {
+    public DettaglioLinee(Integer numeroLinea, Optional<String> tipoCessionePrestazione, Optional<List<CodiceArticolo>> codiceArticolo, String descrizione, Optional<BigDecimal> quantita, Optional<String> unitaMisura, Optional<XMLGregorianCalendar> dataInizioPeriodo, Optional<XMLGregorianCalendar> dataFinePeriodo, BigDecimal prezzoUnitario, Optional<List<ScontoMaggiorazione>> scontoMaggiorazione, BigDecimal aliquotaIVA, Optional<String> ritenuta, Optional<String> natura, Optional<String> riferimentoAmministrazione, Optional<List<AltriDatiGestionali>> altriDatiGestionali) {
         this.numeroLinea = numeroLinea;
         this.tipoCessionePrestazione = tipoCessionePrestazione;
         this.codiceArticolo = codiceArticolo;
@@ -50,7 +49,6 @@ public class DettaglioLinee {
         this.dataFinePeriodo = dataFinePeriodo;
         this.prezzoUnitario = prezzoUnitario;
         this.scontoMaggiorazione = scontoMaggiorazione;
-        this.prezzoTotale = prezzoTotale;
         this.aliquotaIVA = aliquotaIVA;
         this.ritenuta = ritenuta;
         this.natura = natura;
@@ -186,11 +184,18 @@ public class DettaglioLinee {
         this.altriDatiGestionali = altriDatiGestionali;
     }
 
+    private BigDecimal calcolaPrezzoTotale(){
+        if(!Optional.of(this.quantita).isPresent())
+            return new BigDecimal(1).multiply(this.prezzoUnitario);
+        else
+            return this.quantita.get().multiply(this.prezzoUnitario);
+    }
+
     public DettaglioLineeType creaDettaglioLinee(){
         DettaglioLineeType dettaglioLineeType = new DettaglioLineeType();
         dettaglioLineeType.setNumeroLinea(numeroLinea);
         dettaglioLineeType.setDescrizione(descrizione);
-        dettaglioLineeType.setPrezzoTotale(prezzoTotale);
+        dettaglioLineeType.setPrezzoTotale(calcolaPrezzoTotale());
         dettaglioLineeType.setPrezzoUnitario(prezzoUnitario);
         dettaglioLineeType.setAliquotaIVA(aliquotaIVA);
         if(Optional.ofNullable(tipoCessionePrestazione).isPresent()) {

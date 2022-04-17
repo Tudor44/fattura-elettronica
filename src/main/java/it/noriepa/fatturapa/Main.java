@@ -252,8 +252,8 @@ public class Main {
         DettaglioLinee dettaglioLinee = new DettaglioLinee();
         dettaglioLinee.setNumeroLinea(1);
         dettaglioLinee.setDescrizione("DESCRIZIONE DELLA FORNITURA");
-        dettaglioLinee.setQuantita(Optional.of(new BigDecimal("5.00")));
-        dettaglioLinee.setPrezzoUnitario(new BigDecimal("1.00"));
+        dettaglioLinee.setQuantita(Optional.of(new BigDecimal("134.00")));
+        dettaglioLinee.setPrezzoUnitario(new BigDecimal("6.20"));
         dettaglioLinee.setPrezzoTotale(new BigDecimal("5.00"));
         dettaglioLinee.setAliquotaIVA(new BigDecimal(("22.00")));
         return dettaglioLinee;

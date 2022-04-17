@@ -50,7 +50,7 @@
             <DatiGeneraliDocumento>
                 <TipoDocumento>TD01</TipoDocumento>
                 <Divisa>EUR</Divisa>
-                <Data>2022-03-26</Data>
+                <Data>2022-04-17</Data>
                 <Numero>123</Numero>
                 <Causale>FF</Causale>
             </DatiGeneraliDocumento>
@@ -64,7 +64,7 @@
             <DatiContratto>
                 <RiferimentoNumeroLinea>1</RiferimentoNumeroLinea>
                 <IdDocumento>123</IdDocumento>
-                <Data>2022-03-26</Data>
+                <Data>2022-04-17</Data>
                 <NumItem>5</NumItem>
                 <CodiceCUP>123abc</CodiceCUP>
                 <CodiceCIG>456def</CodiceCIG>
@@ -99,9 +99,9 @@
             <DettaglioLinee>
                 <NumeroLinea>1</NumeroLinea>
                 <Descrizione>DESCRIZIONE DELLA FORNITURA</Descrizione>
-                <Quantita>5.00</Quantita>
-                <PrezzoUnitario>1.00</PrezzoUnitario>
-                <PrezzoTotale>5.00</PrezzoTotale>
+                <Quantita>134.00</Quantita>
+                <PrezzoUnitario>6.20</PrezzoUnitario>
+                <PrezzoTotale>830.8000</PrezzoTotale>
                 <AliquotaIVA>22.00</AliquotaIVA>
             </DettaglioLinee>
             <DatiRiepilogo>
