@@ -50,7 +50,7 @@
             <DatiGeneraliDocumento>
                 <TipoDocumento>TD01</TipoDocumento>
                 <Divisa>EUR</Divisa>
-                <Data>2022-04-17</Data>
+                <Data>2022-12-25</Data>
                 <Numero>123</Numero>
                 <Causale>FF</Causale>
             </DatiGeneraliDocumento>
@@ -64,7 +64,7 @@
             <DatiContratto>
                 <RiferimentoNumeroLinea>1</RiferimentoNumeroLinea>
                 <IdDocumento>123</IdDocumento>
-                <Data>2022-04-17</Data>
+                <Data>2022-12-25</Data>
                 <NumItem>5</NumItem>
                 <CodiceCUP>123abc</CodiceCUP>
                 <CodiceCIG>456def</CodiceCIG>

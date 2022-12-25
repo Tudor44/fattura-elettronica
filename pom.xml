@@ -5,19 +5,28 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>it.noirepa</groupId>
     <artifactId>fatturapa</artifactId>
-    <version>0.1</version>
+    <version>0.2</version>
     <description>Libreria per la gestione delle Fatture Elettroniche (Formato italiano xml FatturaPA)</description>
     <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
     </properties>
     <dependencies>
         <!-- https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api -->
-        <dependency>
-            <groupId>javax.xml.bind</groupId>
-            <artifactId>jaxb-api</artifactId>
-            <version>2.3.1</version>
-        </dependency>
+    <!-- JAXB API -->
+    <dependency>
+        <groupId>javax.xml.bind</groupId>
+        <artifactId>jaxb-api</artifactId>
+        <version>2.3.1</version>
+    </dependency>
+
+    <!-- JAXB RI -->
+    <dependency>
+        <groupId>com.sun.xml.bind</groupId>
+        <artifactId>jaxb-impl</artifactId>
+        <version>2.3.4</version>
+    </dependency>
+        
     </dependencies>
     <build>
         <plugins>
@@ -41,7 +50,7 @@
                             <sourceRoot>${basedir}/src/main/java</sourceRoot>
                             <xsdOptions>
                                 <xsdOption>
-                                    <xsd>src/main/resources/fatturapa-1.2.xsd</xsd> <!--shares a common.xsd file causing the conflicts-->
+                                    <xsd>src/main/resources/fatturapa-122.xsd</xsd> <!--shares a common.xsd file causing the conflicts-->
                                     <packagename>it.noriepa.fatturapa.jaxb</packagename>
                                 </xsdOption>
                             </xsdOptions>
