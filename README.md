@@ -14,7 +14,7 @@ documentale.
 #### Aggiornata all'ultima versione della specifica proveniente dall'Agenzia Delle Entrate (1.7).
 Link della specifica completa in formato pdf: [Specifica](https://www.agenziaentrate.gov.it/portale/documents/20143/4056792/Allegato+A+-+Specifiche+tecniche+vers+1.7_30122021.pdf/80bc484b-57d8-1803-f1ab-948bf95912b9)
 
-Funzionalità di base versione 0.1:
+Funzionalità di base versione 0.2:
 1) Possibilità di utilizzare un semplice esempio di fattura per testare le sue funzionalità di base con dati fittizi.
 2) Supporto totale alla specifica. (Compatibile con il supporto alla nuova gestione del tag AltriDatiGestionali).
 3) Possibilità di scrivere e creare porzioni di documento XML.
@@ -30,7 +30,7 @@ mvn clean
 mvn install
 ```
 
-Testata con Maven 3 e Java 8 (al momento).
+Testata con Maven 3 e Java 11 (aggiornata).
 
 Il progetto è stato ideato utilizzando le API di JAXB 2.3.1: 
 
@@ -51,7 +51,7 @@ I'm pleased to share with all of you Open Source version of Italian Electronic I
 
 --------
 I think that the process of digitization of document management is important for all size of organizations and any grade.
-My primer experience with the sphere of document management sphere begin with Italian E-Invoice.
+My primer experience with the sphere of document management begin with Italian E-Invoice.
 
 
 #### Updated with latest version of ADE (Agenzia delle Entrate) specifications (1.7).
@@ -70,7 +70,7 @@ mvn clean
 mvn install
 ```
 
-Tested with Maven 3 and Java 8 (more modern versions to come).
+Tested with Maven 3 and Java 11 (now available)
 
 This component use JAXB API 2.3.1 version.
 
